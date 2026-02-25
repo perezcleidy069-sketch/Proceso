@@ -1,0 +1,10 @@
+[
+    {
+        "tipo": "Pelicula",
+        "titulo": "Blanca nieves",
+        "genero": "Infantil",
+        "director": "Oscar",
+        "puntaje": "10",
+        "duracion": 0.0
+    }
+]
