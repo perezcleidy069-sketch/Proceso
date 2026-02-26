@@ -2,9 +2,10 @@ from docs import carga_datos, guarda_datos, almacenes
 import funcionalidad as funcion
 
 ARCHIVO="almacen.json"
+DOCUMENTO= "promedio.json"
 
 def iniciar_programa():
-   carga_datos(ARCHIVO)
+   carga_datos(ARCHIVO, DOCUMENTO)
 
 while True:
     funcion.separador()
@@ -18,7 +19,9 @@ while True:
     5. Eliminar elementos
     6. Ver todas las categorias
     7. Guardar y Cargar elementos
-    8. Salir"""
+    8. Promedio por global
+    9. Promedio por tipo
+    10. Salir"""
     print(menu)
 
     opc=funcion.pedir_opcion()
@@ -34,9 +37,15 @@ while True:
     elif opc==5:
         funcion.eliminar_elemento()
     elif opc==6:
-        funcion.ver_todas_categorias()
+        funcion.ver_por_categoria()
     elif opc==7:
         print(carga_datos, guarda_datos)
+    elif opc==8:
+        funcion.promedio_global()
+    elif opc==9:
+        funcion.promedio_por_categorias()
+    elif opc==10:
+        break
     
     else: 
         print("Gracias por utilizar nuestro sitio")

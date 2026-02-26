@@ -1,5 +1,6 @@
 import json
 almacenes=[]
+valoracion=[]
     
 def read_json(nombre_archivo):
     try: 

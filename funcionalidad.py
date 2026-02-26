@@ -229,3 +229,69 @@ def ver_por_categoria(tipo_deseado):
             
         print(info)
     separador()
+
+def verificacion_puntaje(puntaje):
+    for e in almacenes:
+        if e ["puntaje"].lower()== puntaje.lower():
+            return True
+        return False
+        
+
+def promedio_global(tipo)
+   
+   for puntaje in almacenes:
+       suma= puntaje + puntaje/tipo
+       print(suma)   
+       
+       guarda_datos("promedio.json")
+
+
+def verificacion_tipo(tipo):
+    for j in almacenes:
+        if j ["tipo"].lower()== tipo.lower():
+            return True
+        return False
+
+def promedio_por_categorias(puntaje):
+    carga_datos(almacenes)
+    separador()
+    print("Valoraciones por categorias")
+    separador()
+
+    opcion="""1
+    1. Valoracion por Libros
+    2. Valoracion por musica
+    3. Valoracion por pelicula
+    4. Volver al menu principal"""
+    print(opcion)
+    separador()
+    opc=pedir_opcion()
+    separador()
+
+    criterio=input("Ingrese el tipo de categoria que desea: ")
+    resultados=[]
+
+
+    for j in almacenes:
+        if opc==1:
+            if criterio in j.get("Libro", "").lower():
+                 promedio= puntaje + puntaje /criterio
+                 print(promedio)
+        elif opc==2:
+            if criterio in j.get("musica","").lower():
+                 promedio= puntaje + puntaje /criterio
+                 print(promedio)
+
+        elif opc==3:
+            if criterio in j.get("pelicula", "").lower():
+                promedio=puntaje + puntaje/criterio
+                print(promedio)
+
+        elif opc==4:
+            break
+        else:
+            print("En el archivo esta vacio por ende no hay voloraciones por tiopo")
+
+        guarda_datos("promedio.json")
+
+
