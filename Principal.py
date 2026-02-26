@@ -26,7 +26,7 @@ while True:
     if opc == 1:
         funcion.añadir_elemento()
     elif opc==2:
-        print(almacenes)
+        funcion.ver_todos_elementos()
     elif opc==3: 
         funcion.buscar_elemento()
     elif opc==4:
@@ -34,9 +34,9 @@ while True:
     elif opc==5:
         funcion.eliminar_elemento()
     elif opc==6:
-        funcion.ver_todos_elementos()
+        funcion.ver_todas_categorias()
     elif opc==7:
-        guarda_datos(ARCHIVO)
+        print(carga_datos, guarda_datos)
     
     else: 
         print("Gracias por utilizar nuestro sitio")

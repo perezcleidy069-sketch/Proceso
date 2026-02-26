@@ -6,5 +6,13 @@
         "director": "Oscar",
         "puntaje": "10",
         "duracion": 0.0
+    },
+    {
+        "tipo": "Musica",
+        "titulo": "El sapito",
+        "genero": "infantil",
+        "artista": "Belinda",
+        "puntaje": "10",
+        "duraciòn": 0.0
     }
 ]

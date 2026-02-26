@@ -11,8 +11,8 @@ def read_json(nombre_archivo):
         print(f"ERROR: El archivo {nombre_archivo} no tiene un formato vàlido")
     
 def write_json(nombre_archivo, contenido):
-    with open(nombre_archivo, "w", encondig="utf-8") as file:
-      json.dump(contenido, file, ident=4, ensure_ascii=False) 
+    with open(nombre_archivo, "w", encoding="utf-8") as file:
+      json.dump(contenido, file, indent=4, ensure_ascii=False) 
 
 def carga_datos(nombre_archivo="almacen.json"):
     datos= read_json(nombre_archivo)
